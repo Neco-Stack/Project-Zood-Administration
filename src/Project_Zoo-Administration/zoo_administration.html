@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo-Administration</title>
+</head>
+<body>
+    <h1>Zoo-Administration</h1>
+
+    <section id="animalSelection">
+        <h2>Please add an animal to the zoo</h2>
+        <form id="animalForm">
+            <label for="animalType">Animal Type</label>
+            <select id="animalType">
+                <option value="Lion">Lion</option>
+                <option value="Elephant">Elephant</option>
+                <option value="Bear">Bear</option>
+                <option value="Monkey">Monkey</option>
+                <option value="Dolphin">Dolphin</option>
+                <option value="Turtle">Turtle</option>
+                <option value="Crocodile">Crocodile</option>
+            </select>
+    
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+    
+            <label for="yearOfBirth">Birthday</label>
+            <input type="number" id="yearOfBirth" required>
+    
+            <select name="" id="specialNeeds">Special Needs</select>
+                <option value="">Social interaction inevitable</option>
+                <option value="">Requires large space</option>
+                <option value=""></option>
+    
+            <button id="createAnimal">Create Animal</button>
+        </form>
+    </section>
+
+    <section id="habitatArea">
+        <div id="savannaHub">
+            <h3>Savannah Habitat</h3>
+        </div>
+        <div id="jungleHub">
+            <h3>Jungle Habitat</h3>
+        </div>
+        <div id="reptileHub">
+            <h3>Reptile House</h3>
+        </div>
+        <div id="aquaHub">
+            <h3>Aquarium</h3>
+        </div>
+    </section>
+
+    <script type="module" src="./Animal.ts"></script>
+    <script type="module" src="./Enclosure.ts"></script>
+    <script type="module" src="../main.ts"></script>
+
+</body>
+</html>
