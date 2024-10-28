@@ -1,6 +1,6 @@
 import Animal from "./Project_Zoo-Administration/Animal";
 import Enclosure, {EnclosureID} from "./Project_Zoo-Administration/Enclosure";
-import { SpecialNeeds } from "./Project_Zoo-Administration/Animal";
+import { SpecialNeeds } from './Project_Zoo-Administration/Animal';
 
 const allEnclosures: Enclosure[] = [
   new Enclosure(EnclosureID.SavannahHabitat, "Savannah-Habitat", 1989),
@@ -22,11 +22,13 @@ const allAnimals: Animal[] = [
   new Animal("🦈", "Whity", 2020, ["Ozeanien"], SpecialNeeds.Insects, EnclosureID.AquaticHabitat),
   new Animal("🦎", "Lizzard", 2019, ["Australien"], SpecialNeeds.Insects, EnclosureID.ReptileHouse),
 ];
-
 console.log(allEnclosures);
 console.log(allAnimals);
 
-
+const animalType = document.getElementById('animalType') as HTMLSelectElement
+const name = document.getElementById('name') as HTMLInputElement;
+const yearOfBirth= document.getElementById('yearOfBirth') as HTMLInputElement;
+const specialNeeds = document.getElementById('specialNeeds') as HTMLSelectElement;
 
 
 

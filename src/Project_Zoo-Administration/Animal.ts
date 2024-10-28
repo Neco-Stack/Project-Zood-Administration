@@ -37,6 +37,46 @@ class Animal {
         this._enclosure = enclosureID;
     }
 }
+class Elephant extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) { 
+        super("🐘", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+class Lion extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🦁", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+class Bear extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🐻", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+class Monkey extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🐒", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+
+class Dolphin extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🐬", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+class Snake extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🐍", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+
+class Parrot extends Animal {
+    constructor(name: string, yearOfBirth: number, continents: string[], specialNeeds: SpecialNeeds, enclosureId: EnclosureID) {
+        super("🦜", name, yearOfBirth, continents, specialNeeds, enclosureId);
+    }
+}
+console.log(Elephant,Parrot,Snake,Dolphin, Monkey, Bear, Lion, Elephant
+);
+
 
 
 export default Animal;
